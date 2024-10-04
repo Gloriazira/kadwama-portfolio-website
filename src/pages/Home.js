@@ -43,16 +43,16 @@ const Home = () => {
                     <div className="social-media-links absolute bottom-16 right-6 md:right-16 lg:right-16 xl:right-16 2xl:right-16">
                         <div className="text-white ">
 
-                            <a href="mailto:mailto:lazaruskadwama@gmail.com" target="_blank" className="">
+                            <a href="mailto:mailto:lazaruskadwama@gmail.com" target="_blank" rel="noreferrer" className="">
                                 <Icon icon="ion:mail" className="social-icon w-4 h-auto mt-5  hover:scale-150 transition-transform duration-200" />
                             </a>
-                            <a href="https://www.linkedin.com/in/kadwama-lazarus-60664b1b2/" target="_blank" className="">
+                            <a href="https://www.linkedin.com/in/kadwama-lazarus-60664b1b2/" target="_blank" rel="noreferrer" className="">
                                 <Icon icon="ri:linkedin-fill" className="social-icon w-4 h-auto mt-5  hover:scale-150 transition-transform duration-200" />
                             </a>
-                            <a href="https://x.com/DeborahLazarus4" target="_blank" className="">
+                            <a href="https://x.com/DeborahLazarus4" target="_blank" rel="noreferrer" className="">
                                 <Icon icon="lucide:twitter" className="social-icon w-4 h-auto mt-5  hover:scale-150 transition-transform duration-200" />
                             </a>
-                            <a href="https://www.behance.net/kadwamaDeborah" target="_blank" className="">
+                            <a href="https://www.behance.net/kadwamaDeborah" target="_blank" rel="noreferrer" className="">
                                 <Icon icon="bxl:behance" className="social-icon w-5 h-auto mt-5  hover:scale-150 transition-transform duration-200" />
                             </a>
                         </div>

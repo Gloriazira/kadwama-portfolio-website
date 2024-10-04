@@ -1,7 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
 import Navbar from "../components/Navbar";
-import myPicture from '../assets/profile_image.png';
 import profilePicture from '../assets/my_picture.png';
 import whiteRectangle from '../assets/white_rectangles.png';
 import helloTractor from '../assets/organizations/hello_tractor.png';
@@ -10,7 +9,6 @@ import haraf from '../assets/organizations/haraf.png';
 import bigFamily from '../assets/organizations/big_family360.png';
 import sunSet from '../assets/organizations/sunset_realtors.png';
 import pride from '../assets/organizations/pride.png';
-import CustomCursor from '../components/CustomCursor';
 
 const AboutMe = () => {
     return (
