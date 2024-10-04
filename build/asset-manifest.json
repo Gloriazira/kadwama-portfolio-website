@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44375fe7.css",
+    "main.js": "/static/js/main.ac649994.js",
+    "static/media/background_ocean.png": "/static/media/background_ocean.3699b37c12f28bb55f9c.png",
+    "static/media/profile_image.png": "/static/media/profile_image.bb931cabc363fb46cf74.png",
+    "static/media/my_picture.png": "/static/media/my_picture.9b3557d39a92975c4137.png",
+    "static/media/pride.png": "/static/media/pride.890d723265f9176b1df5.png",
+    "static/media/big_family360.png": "/static/media/big_family360.e602fc613b93ad277211.png",
+    "static/media/haraf.png": "/static/media/haraf.5fe3e5ffb5d442951738.png",
+    "index.html": "/index.html",
+    "main.44375fe7.css.map": "/static/css/main.44375fe7.css.map",
+    "main.ac649994.js.map": "/static/js/main.ac649994.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44375fe7.css",
+    "static/js/main.ac649994.js"
+  ]
+}
