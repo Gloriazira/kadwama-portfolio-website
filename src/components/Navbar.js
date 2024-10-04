@@ -115,10 +115,10 @@ const Navbar = () => {
                         <div className="hidden lg:block xl:block 2xl:block">
                             <ul className={`flex flex-nowrap text-nowrap space-x-7 text-[13px] font-[500] ${isAboutPage ? 'text-[#000000] mr-40' : 'text-white xl:mr-40 lg:mr-10'}`}>
                                 <li className={` ${isAboutPage ? 'navlinks hoverable' : ''}`}>
-                                    <a href="#" className={`hover:text-[#015A58] py-1 ${activeLink === 'design' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('design')}>Design Use Cases</a>
+                                    <a href="/" className={`hover:text-[#015A58] py-1 ${activeLink === 'design' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('design')}>Design Use Cases</a>
                                 </li>
                                 <li className={` ${isAboutPage ? 'navlinks hoverable' : ''}`}>
-                                    <a href="#" className={`hover:text-[#015A58] py-1 ${activeLink === 'ui' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('ui')}>UI PlayGround</a>
+                                    <a href="/" className={`hover:text-[#015A58] py-1 ${activeLink === 'ui' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('ui')}>UI PlayGround</a>
                                 </li>
                                 <li className={` ${isAboutPage ? 'navlinks hoverable' : ''}`}>
                                     <a href="/about-me" className={`hover:text-[#015A58] py-1 ${activeLink === 'about' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('about')}>About Me</a>
@@ -138,10 +138,10 @@ const Navbar = () => {
                 <div className=" nav-background fixed top-0 left-0 w-full h-full z-20 bg-[#015A58] flex items-center justify-center text-white">
                     <ul className="space-y-4 text-center text-[25px] ">
                         <li>
-                            <a href="#" className="hover:text-[#015A58]" onClick={() => { setActiveLink('design'); setIsOpen(false); }}>Design Use Cases</a>
+                            <a href="/" className="hover:text-[#015A58]" onClick={() => { setActiveLink('design'); setIsOpen(false); }}>Design Use Cases</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:text-[#015A58]" onClick={() => { setActiveLink('ui'); setIsOpen(false); }}>UI Playground</a>
+                            <a href="/" className="hover:text-[#015A58]" onClick={() => { setActiveLink('ui'); setIsOpen(false); }}>UI Playground</a>
                         </li>
                         <li>
                             <a href="/about-me" className="hover:text-[#015A58]" onClick={() => { setActiveLink('about'); setIsOpen(false); }}>About Me</a>

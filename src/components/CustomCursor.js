@@ -110,8 +110,27 @@ const CustomCursor = ({ isAboutPage }) => {
     const [isIcon, setIsIconElement] = useState(false);
     const [isButton, setIsButtonElement] = useState(false);
     const [isNavBackground, setIsNavBackground] = useState(false);
+    const [isCursorEnabled, setIsCursorEnabled] = useState(true);
 
     useEffect(() => {
+        const handleResize = () => {
+            setIsCursorEnabled(window.innerWidth >= 600); // Disable cursor if width < 600px
+        };
+
+        // Initial check
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+
+    useEffect(() => {
+        if (!isCursorEnabled) return;
+
         const moveCursor = (e) => {
             setPosition({ x: e.clientX, y: e.clientY });
 
@@ -124,7 +143,7 @@ const CustomCursor = ({ isAboutPage }) => {
                 setIsTextElement(isTextElement);
 
                 // Check if the element is the navbar image
-                const isNavbarImage =elementUnderCursor.closest('.logo-img') && elementUnderCursor.classList.contains('hoverable');
+                const isNavbarImage = elementUnderCursor.closest('.logo-img') && elementUnderCursor.classList.contains('hoverable');
                 setIsNavImage(isNavbarImage);
 
                 const isIcon = elementUnderCursor.closest('.social-icon') && elementUnderCursor.classList.contains('hoverable');
@@ -137,7 +156,7 @@ const CustomCursor = ({ isAboutPage }) => {
 
                 // Check if the element is within the nav background
                 const isNav = elementUnderCursor.closest('.nav-background'); // Check if inside the nav background
-                setIsNavBackground(!!isNav); 
+                setIsNavBackground(!!isNav);
 
                 if (isTextElement) {
                     hoverIn('text'); // Call hoverIn for text elements
@@ -154,9 +173,9 @@ const CustomCursor = ({ isAboutPage }) => {
 
                 if (isTextElement || isNavbarImage || isIcon || isButton) {
                     setColor('transparent');
-                }else if (isNav) {
+                } else if (isNav) {
                     setColor('transparent');
-                 } else {
+                } else {
                     setColor('#015A58');
                 }
 
@@ -171,7 +190,7 @@ const CustomCursor = ({ isAboutPage }) => {
             switch (elementType) {
                 case 'navbarImage':
                 case 'button':
-                    
+
                     setScale(4); // Scale for text elements
                     break;
                 case 'icon':
@@ -201,7 +220,9 @@ const CustomCursor = ({ isAboutPage }) => {
                 el.removeEventListener('mouseleave', hoverOut);
             });
         };
-    }, []);
+    }, [isCursorEnabled]); // Depend on cursor visibility
+
+    if (!isCursorEnabled) return null;
 
     return (
         <div
