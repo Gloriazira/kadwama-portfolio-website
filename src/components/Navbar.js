@@ -82,7 +82,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const updateLogo = () => {
-            setLogo(window.innerWidth < 899 ? logoWhite : logoGreen);
+            setLogo(((window.innerWidth < 899 && location.pathname === '/about-me') || !(location.pathname === '/about-me'))  ? logoWhite : logoGreen);
             setNavBg(window.innerWidth > 899 ? 'bg-white' : 'bg-transparent');
         };
 
