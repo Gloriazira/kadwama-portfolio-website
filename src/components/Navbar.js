@@ -92,7 +92,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('resize', updateLogo);
         };
-    }, []);
+    }, [window.innerWidth,location.pathname  ]);
 
     useEffect(() => {
         if (location.pathname === '/about-me') {
