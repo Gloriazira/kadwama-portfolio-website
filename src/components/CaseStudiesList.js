@@ -7,8 +7,8 @@ import afcAdmin from '../assets/afc_admin.png';
 
 const CaseStudiesList = () => {
     const navigate = useNavigate();
-    const location = useLocation();
-    const [activeLink, setActiveLink] = useState('');
+    // const location = useLocation();
+    // const [activeLink, setActiveLink] = useState('');
     const [showSnackbar, setShowSnackbar] = useState(false);
 
     const handleClick = (caseId) => {
@@ -21,13 +21,13 @@ const CaseStudiesList = () => {
     };
 
 
-    useEffect(() => {
-        if (location.pathname === '/about-me') {
-            setActiveLink('about');
-        } else {
-            setActiveLink('');
-        }
-    }, [location.pathname]);
+    // useEffect(() => {
+    //     if (location.pathname === '/about-me') {
+    //         setActiveLink('about');
+    //     } else {
+    //         setActiveLink('');
+    //     }
+    // }, [location.pathname]);
 
 
 
