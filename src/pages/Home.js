@@ -72,6 +72,7 @@ const Home = () => {
                     </h1>
                     <p className="text-[20px] mt-3 font-medium text-center text-[#015A58]">Kindly check back after a few weeks</p>
                 </div> */}
+                
 
                 <div className="py-16 px-24">
                     <CaseStudiesList />
