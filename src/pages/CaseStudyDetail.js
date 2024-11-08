@@ -35,6 +35,7 @@ export default function CaseStudyDetail() {
         { id: 'OutcomeAndResults', label: 'Outcome & Results' },
     ];
 
+    
     useEffect(() => {
         const observers = sections.map((section) => {
             const element = document.getElementById(section.id);
