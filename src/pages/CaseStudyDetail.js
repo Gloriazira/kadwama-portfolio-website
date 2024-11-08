@@ -54,7 +54,7 @@ export default function CaseStudyDetail() {
         });
 
         return () => observers.forEach((observer) => observer && observer.disconnect());
-    }, []);
+    }, [sections]);
 
     const handleClick = (caseId) => {
         if (caseId === 'afc') {
