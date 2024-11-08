@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import afcImage from '../assets/case_study_one/afc.png';
 import herPride from '../assets/Scene pride.png';
@@ -7,8 +7,6 @@ import afcAdmin from '../assets/afc_admin.png';
 
 const CaseStudiesList = () => {
     const navigate = useNavigate();
-    // const location = useLocation();
-    // const [activeLink, setActiveLink] = useState('');
     const [showSnackbar, setShowSnackbar] = useState(false);
 
     const handleClick = (caseId) => {

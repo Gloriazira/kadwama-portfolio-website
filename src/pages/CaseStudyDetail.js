@@ -9,7 +9,7 @@ import CompetitiveAnalysis from '../assets/case_study_one/Competitive analysis.p
 import afcOnboarding from '../assets/case_study_one/afc_onboarding.png';
 import afcMain from '../assets/case_study_one/afcmain.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const importAll = (r) => {
     return r.keys().map(r);
