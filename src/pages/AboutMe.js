@@ -106,7 +106,7 @@ const AboutMe = () => {
                 <div className="contact-me py-8 bg-[#015A58] lg:h-[300px] ">
                     <div className="flex items-end  w-full">
                         {/* Horizontal line aligned to the left */}
-                        <hr className='w-[60px] lg:w-[200px] xl:w-[200px] 2xl:w-[200px] mb-3 sm:mb-4 md:mb-4 lg:mb-4 xl:mb-5 2xl:mb-4' />
+                        <hr className='w-[60px] lg:w-[150px] xl:w-[150px] 2xl:w-[150px] mb-3 sm:mb-4 md:mb-4 lg:mb-4 xl:mb-5 2xl:mb-4' />
 
                         {/* Div aligned to the right */}
                         <div className='flex flex-col'>

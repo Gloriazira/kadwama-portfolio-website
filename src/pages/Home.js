@@ -2,10 +2,11 @@ import Navbar from "../components/Navbar";
 import { Icon } from '@iconify/react';
 
 import greenRectangle from '../assets/green_rectangles.png';
+import CaseStudiesList from "../components/CaseStudiesList";
 
 
 const Home = () => {
-   
+
 
     return (
         <div className="bg-white">
@@ -14,7 +15,7 @@ const Home = () => {
                 <div className=" w-[96%] h-[96vh]  bg-gradient-to-b from-[#000000D9] to-[#002F2ED9] relative   ">
                     <Navbar />
 
-                 
+
                     {/* <div className="flex flex-col items-stretch mt-8"> */}
                     <div className="home-screen-text flex items-center justify-center absolute top-1/2 left-1/2 md:left-[40%] transform -translate-x-1/2 -translate-y-1/2">
                         <img src={greenRectangle} alt="" className='w-7 absolute right-[40px] top-[-90px] sm:right-[-50px] lg:right-[-110px] lg:top-[-50px] xl:right-[-110px] xl:top-[-50px] 2xl:right-[-110px] 2xl:top-[-50px]' />
@@ -65,13 +66,41 @@ const Home = () => {
             </div>
 
             <div className="coming-soon">
-                <div className="py-24 flex flex-col items-center justify-center px-2">
+                {/* <div className="py-24 flex flex-col items-center justify-center px-2">
                     <h1 className="text-[30px] text-center text-[#015A58] md:text-[45px] lg:text-[55px] xl:text-[55px] 2xl:text-[55px]  ">
                         Design Case Studies Coming Soon...
                     </h1>
                     <p className="text-[20px] mt-3 font-medium text-center text-[#015A58]">Kindly check back after a few weeks</p>
+                </div> */}
+
+                <div className="py-16 px-24">
+                    <CaseStudiesList />
                 </div>
             </div>
+
+            <section>
+                <div className="contact-me py-8 bg-[#015A58] lg:h-[300px] ">
+                    <div className="flex items-end  w-full">
+                        {/* Horizontal line aligned to the left */}
+                        <hr className='w-[60px] lg:w-[100px] xl:w-[100px] 2xl:w-[100px] mb-3 sm:mb-4 md:mb-4 lg:mb-4 xl:mb-5 2xl:mb-4' />
+
+                        {/* Div aligned to the right */}
+                        <div className='flex flex-col'>
+                            <div className="contact-me-text text-white">
+                                <p className="text-[25px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-medium ">Contact Me</p>
+                                <p className='text-[12px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px] mb-5'>Do you have an exciting idea in mind? <br />Send a mail</p>
+                            </div>
+                            <div className=" mt-4 ">
+                                <a href="mailto:lazaruskadwama@gmail.com" className='hoverable resume-button text-white flex items-center'>
+                                    <Icon icon="mdi-light:arrow-right-circle" className='w-6 sm:w-8 md:w-10 lg:w-12 xl:w-12 2xl:w-14  h-auto' />
+                                    <p className='text-[12px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[14px] 2xl:text-[14px]'>lazaruskadwama@gmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
         </div>
 
