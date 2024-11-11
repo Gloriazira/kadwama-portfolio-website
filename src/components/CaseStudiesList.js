@@ -31,18 +31,18 @@ const CaseStudiesList = () => {
 
     return (
         <>
-            <div className=''>
+            <div className='py-5'>
                 {/* Case One */}
-                <div className="case-one container">
-                    <div className="grid grid-cols-2 items-center">
+                <div className="case-one container lg:mx-auto lg:max-w-[850px]">
+                    <div className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 items-center">
 
-                        <div className=" px-3 py-1  border-l-[1.5px] border-l-[#015A58] text-[#000000] w-[280px] xs:w-[330px] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
+                        <div className=" px-3 py-1  lg:border-l-[1.5px] xl:border-l-[1.5px] 2xl:border-l-[1.5px] border-l-[#015A58] text-[#000000] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
 
-                            <h1 className="text-[25px] sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-[28px] lg:text-nowrap xl:text-[30px] xl:text-nowrap 2xl:text-[30px] 2xl:text-nowrap font-[500]">
+                            <h1 className="text-[25px] text-center sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-left lg:text-[28px] lg:text-nowrap xl:text-left xl:text-[30px] xl:text-nowrap 2xl:text-left 2xl:text-[30px] 2xl:text-nowrap font-[500]">
                                 Creative Approach to Borrowing {<br />} And Loan Management
                             </h1>
-
-                            <p className="text-[14px] sm:text-[14px] leading-relaxed mt-3 text-wrap max-w-[400px]">
+                            <img src={afcImage} alt="afc design" className='w-[870px] h-auto mt-3 block lg:hidden xl:hidden 2xl:hidden ' />
+                            <p className="text-[14px] text-justify lg:text-left xl:text-left 2xl:text-left sm:text-[14px] md:text-[16px] leading-relaxed mt-3 text-wrap lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[400px]">
                                 As the lead product designer, I crafted a seamless
                                 borrowing and financial management experience for an
                                 agricultural cooperative, addressing the unique pain
@@ -54,29 +54,29 @@ const CaseStudiesList = () => {
 
                             <button
                                 onClick={() => handleClick('afc')}
-                                className=" flex items-center justify-center hoverable resume-button w-[120px]  bg-[#015A58] text-white p-1 mt-4"
+                                className=" flex items-center justify-center hoverable resume-button w-[120px] md:mx-auto  bg-[#015A58] text-white p-1 mt-4"
                             >
                                 <p className="text-sm font-medium me-1 ">Case Study</p>
                                 <Icon icon="guidance:left-arrow" className="w-6 h-auto" />
                             </button>
                         </div>
 
-                        <img src={afcImage} alt="afc design" className='w-[870px] h-auto ' />
+                        <img src={afcImage} alt="afc design" className='w-[870px] h-auto hidden lg:block xl:block 2xl:block ' />
                     </div>
                 </div>
 
 
                 {/* Case Two */}
-                <div className="case-two container mt-28">
-                    <div className="grid grid-cols-2 items-center justify-items-end">
-                        <img src={herPride} alt="afc design" className='w-[870px] h-auto' />
-                        <div className=" px-3 py-1  border-l-[1.5px] border-l-[#015A58] text-[#000000] w-[280px] xs:w-[330px] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
+                <div className="case-two container lg:mx-auto lg:max-w-[850px] mt-28">
+                    <div className="grid grid-cols-1 justify-center lg:grid-cols-2 lg:justify-items-end xl:justify-items-end xl:grid-cols-2 2xl:grid-cols-2 2xl:justify-items-end items-center">
+                        <img src={herPride} alt="afc design" className='w-[870px] h-auto hidden lg:block xl:block 2xl:block' />
+                        <div className=" px-3 lg:pl-3 lg:pr-0 py-1  lg:border-l-[1.5px] xl:border-l-[1.5px] 2xl:border-l-[1.5px] border-l-[#015A58] text-[#000000] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
 
-                            <h1 className="text-[25px] sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-[28px] lg:text-nowrap xl:text-[30px] xl:text-nowrap 2xl:text-[30px] 2xl:text-nowrap font-[500]">
+                            <h1 className="text-[25px] text-center sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-left lg:text-[28px] lg:text-nowrap xl:text-left xl:text-[30px] xl:text-nowrap 2xl:text-left 2xl:text-[30px] 2xl:text-nowrap font-[500]">
                                 Her Pride Mobile  {<br />} Application
                             </h1>
-
-                            <p className="text-[14px] sm:text-[14px] leading-relaxed mt-3 text-wrap max-w-[400px]">
+                            <img src={herPride} alt="afc design" className='w-[870px] h-auto mt-3 block lg:hidden xl:hidden 2xl:hidden ' />
+                            <p className="text-[14px] text-justify md:text-center lg:text-left xl:text-left 2xl:text-left sm:text-[14px] md:text-[16px] leading-relaxed mt-3 text-wrap lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[400px]">
                                 Before diving into the design, determine your objectives.
                                 Are you looking for a job, freelance clients,
                                 or simply showcasing your work to the community?
@@ -86,7 +86,7 @@ const CaseStudiesList = () => {
 
                             <button
                                 onClick={handleClick}
-                                className=" flex items-center justify-center hoverable resume-button w-[120px]  bg-[#015A58] text-white p-1 mt-4"
+                                className=" flex items-center justify-center hoverable resume-button w-[120px] md:mx-auto  bg-[#015A58] text-white p-1 mt-4"
                             >
                                 <p className="text-sm font-medium me-1 ">Case Study</p>
                                 <Icon icon="guidance:left-arrow" className="w-6 h-auto" />
@@ -97,16 +97,16 @@ const CaseStudiesList = () => {
 
 
                 {/* Case Three */}
-                <div className="case-three container mt-28">
-                    <div className="grid grid-cols-2 items-center">
+                <div className="case-three container lg:mx-auto lg:max-w-[850px] mt-28">
+                    <div className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 items-center">
 
-                        <div className=" px-3 py-1  border-l-[1.5px] border-l-[#015A58] text-[#000000] w-[280px] xs:w-[330px] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
+                        <div className=" px-3 py-1  lg:border-l-[1.5px] xl:border-l-[1.5px] 2xl:border-l-[1.5px] border-l-[#015A58] text-[#000000] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
 
-                            <h1 className="text-[25px] sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-[28px] lg:text-nowrap xl:text-[30px] xl:text-nowrap 2xl:text-[30px] 2xl:text-nowrap font-[500]">
+                            <h1 className="text-[25px] text-center sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-left lg:text-[28px] lg:text-nowrap xl:text-left xl:text-[30px] xl:text-nowrap 2xl:text-left 2xl:text-[30px] 2xl:text-nowrap font-[500]">
                                 Creative Approach {<br />} to Borrowing
                             </h1>
-
-                            <p className="text-[14px] sm:text-[14px] leading-relaxed mt-3 text-wrap max-w-[400px]">
+                            <img src={afcAdmin} alt="afc design" className='w-[870px] h-auto mt-3 block lg:hidden xl:hidden 2xl:hidden' />
+                            <p className="text-[14px] text-justify md:text-left lg:text-left xl:text-left 2xl:text-left sm:text-[14px] md:text-[16px] leading-relaxed mt-3 text-wrap lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[400px]">
                                 Before diving into the design, determine your objectives.
                                 Are you looking for a job, freelance clients, or simply
                                 showcasing your work to the community? Knowing your
@@ -114,14 +114,14 @@ const CaseStudiesList = () => {
                             </p>
                             <button
                                 onClick={handleClick}
-                                className=" flex items-center justify-center hoverable resume-button w-[120px]  bg-[#015A58] text-white p-1 mt-4"
+                                className=" flex items-center justify-center hoverable resume-button w-[120px] md:mx-auto  bg-[#015A58] text-white p-1 mt-4"
                             >
                                 <p className="text-sm font-medium me-1 ">Case Study</p>
                                 <Icon icon="guidance:left-arrow" className="w-6 h-auto" />
                             </button>
                         </div>
 
-                        <img src={afcAdmin} alt="afc design" className='w-[870px] h-auto' />
+                        <img src={afcAdmin} alt="afc design" className='w-[870px] h-auto hidden lg:block xl:block 2xl:block' />
                     </div>
                 </div>
                 {showSnackbar && (

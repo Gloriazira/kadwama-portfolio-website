@@ -13,6 +13,8 @@ const Navbar = () => {
     const [logo, setLogo] = useState(logoWhite);
     const [navBg, setNavBg] = useState('bg-white');
     const [linkColor, setLinkColor] = useState('text-white');
+    const [menuIcon, setMenuIcon] = useState('text-white');
+
     const caseId = "afc"
 
     // useEffect(() => {
@@ -35,11 +37,19 @@ const Navbar = () => {
                 setLogo(window.scrollY > 500 ? logoGreen : logoWhite);
                 setNavBg(window.scrollY > 500 ? 'bg-white' : 'bg-transparent');
                 setLinkColor(window.scrollY > 500 ? 'text-[#000000]' : 'text-white xl:mr-40 lg:mr-10');
+                setMenuIcon(window.scrollY > 500 ? 'text-[#015A58]' : 'text-white');
                 // ${isAboutPage ? 'text-[#000000] ' : 'text-white '}
-            } else if (location.pathname === '/about-me' || location.pathname === `/case-study/${caseId}`) {
-                setLogo(window.innerWidth < 899 ? logoWhite : logoGreen);
-                setNavBg(window.innerWidth > 899 ? 'bg-white shadow' : 'bg-transparent');
+            } else if (window.scrollY > 500 || window.scrollY < 500) {
+                setLogo(window.innerWidth < 899 && (window.scrollY < 500) && !(location.pathname === `/case-study/${caseId}`) ? logoWhite : logoGreen);
+                setNavBg((window.innerWidth > 899 || window.scrollY > 500) || (location.pathname === `/case-study/${caseId}`) ? 'bg-white shadow' : 'bg-transparent');
                 setLinkColor(window.innerWidth > 899 ? 'text-[#000000] mr-40 xl:mr-40 lg:mr-10 ' : 'text-white');
+                // setMenuIcon(window.scrollY > 500 || (window.innerWidth < 899 || (location.pathname === `/case-study/${caseId}`)) ? 'text-[#015A58]' :  (window.scrollY < 500 && location.pathname === '/about-me') ? 'text-white' : 'text-white');
+                setMenuIcon(
+                    location.pathname === `/case-study/${caseId}` || (location.pathname === '/about-me' && window.scrollY > 500)
+                        ? 'text-[#015A58]'
+                        : 'text-white'
+                );
+                
             }
         };
 
@@ -70,8 +80,8 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`fixed top-0 left-0 w-full bg-transparent z-30 ${navBg}`}>
-                <div className="container mx-auto flex justify-between items-center px-5 sm:px-5 md:px-8 lg:px-8 xl:px-8 2xl:px-8  py-5">
+            <div className={`fixed top-0 left-0 w-full bg-transparent z-40 ${navBg}`}>
+                <div className="container  mx-auto flex justify-between items-center px-5 sm:px-5 md:px-8 lg:px-8 xl:px-8 2xl:px-8  py-5">
                     <img src={logo} alt="logo" className='logo-img hoverable w-8' onClick={() => { navigate('/'); setIsOpen(false); }} />
 
                     <div className="flex items-center">
@@ -89,7 +99,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="lg:hidden xl:hidden 2xl:hidden"> {/* Show this on small screens */}
-                            <button onClick={() => setIsOpen(!isOpen)} className={` z-50 ${isAboutPage ? ' text-[#015A58]m text-[#fff]' : 'text-[#fff]'}`}>
+                            <button onClick={() => setIsOpen(!isOpen)} className={` z-50 ${menuIcon}`}>
                                 <Icon icon={isOpen ? "ci:close-sm" : "ci:menu-alt-01"} className='w-10 h-auto' />
                             </button>
                         </div>

@@ -9,7 +9,7 @@ const Home = () => {
 
 
     return (
-        <div className="bg-white">
+        <div className="bg-white overflow-x-hidden">
 
             <div className="landing-section h-screen bg-cover bg-center bg-no-repeat flex flex-col ">
                 <div className=" w-[96%] h-[96vh]  bg-gradient-to-b from-[#000000D9] to-[#002F2ED9] relative   ">
@@ -19,7 +19,7 @@ const Home = () => {
                     {/* <div className="flex flex-col items-stretch mt-8"> */}
                     <div className="home-screen-text flex items-center justify-center absolute top-1/2 left-1/2 md:left-[40%] transform -translate-x-1/2 -translate-y-1/2">
                         <img src={greenRectangle} alt="" className='w-7 absolute right-[40px] top-[-90px] sm:right-[-50px] lg:right-[-110px] lg:top-[-50px] xl:right-[-110px] xl:top-[-50px] 2xl:right-[-110px] 2xl:top-[-50px]' />
-                        <div className="bio px-3 py-1  border-l-[1.5px] border-l-white text-white w-[280px] xs:w-[330px] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
+                        <div className="bio px-3 py-1  border-l-[1.5px] border-l-white text-white w-[250px] xs:w-[280px] md:w-fit lg:w-max xl:w-max 2xl:w-max ">
 
                             <h1 className="text-[25px] sm:text-[32px] sm:text-nowrap md:text-[38px] md:text-nowrap lg:text-[45px] lg:text-nowrap xl:text-[45px] xl:text-nowrap 2xl:text-[45px] 2xl:text-nowrap font-[500]">Kadwama Deborah Lazarus</h1>
 
@@ -74,7 +74,7 @@ const Home = () => {
                 </div> */}
                 
 
-                <div className="py-16 px-24">
+                <div className="flex items-center justify-center lg:py-16 xl:py-16 2xl:py-16  xl:px-20 2xl:px-20">
                     <CaseStudiesList />
                 </div>
             </div>
