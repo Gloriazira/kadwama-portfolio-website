@@ -15,7 +15,7 @@ const Navbar = () => {
     const [linkColor, setLinkColor] = useState('text-white');
     const [menuIcon, setMenuIcon] = useState('text-white');
 
-    const caseId = "afc"
+    const caseId = ["afc", "her-pride"];
 
     // useEffect(() => {
     //     const updateLogo = () => {
@@ -40,12 +40,12 @@ const Navbar = () => {
                 setMenuIcon(window.scrollY > 500 ? 'text-[#015A58]' : 'text-white');
                 // ${isAboutPage ? 'text-[#000000] ' : 'text-white '}
             } else if (window.scrollY > 500 || window.scrollY < 500) {
-                setLogo(window.innerWidth < 899 && (window.scrollY < 500) && !(location.pathname === `/case-study/${caseId}`) ? logoWhite : logoGreen);
-                setNavBg((window.innerWidth > 899 || window.scrollY > 500) || (location.pathname === `/case-study/${caseId}`) ? 'bg-white shadow' : 'bg-transparent');
+                setLogo(window.innerWidth < 899 && (window.scrollY < 500) && !caseId.some(id => location.pathname === `/case-study/${id}`) && !(location.pathname === '/case-study') ? logoWhite : logoGreen);
+                setNavBg((window.innerWidth > 899 || window.scrollY > 500) || caseId.some(id => location.pathname === `/case-study/${id}`) || location.pathname === '/case-study' ? 'bg-white shadow' : 'bg-transparent');
                 setLinkColor(window.innerWidth > 899 ? 'text-[#000000] mr-40 xl:mr-40 lg:mr-10 ' : 'text-white');
                 // setMenuIcon(window.scrollY > 500 || (window.innerWidth < 899 || (location.pathname === `/case-study/${caseId}`)) ? 'text-[#015A58]' :  (window.scrollY < 500 && location.pathname === '/about-me') ? 'text-white' : 'text-white');
                 setMenuIcon(
-                    location.pathname === `/case-study/${caseId}` || (location.pathname === '/about-me' && window.scrollY > 500)
+                    caseId.some(id => location.pathname === `/case-study/${id}`) || location.pathname === '/case-study' || (location.pathname === '/about-me' && window.scrollY > 500)
                         ? 'text-[#015A58]'
                         : 'text-white'
                 );
@@ -88,7 +88,7 @@ const Navbar = () => {
                         <div className="hidden lg:block xl:block 2xl:block">
                             <ul className={`flex flex-nowrap text-nowrap space-x-7 text-[13px] font-[500] ${linkColor} `}>
                                 <li className={` ${isAboutPage ? 'navlinks hoverable' : ''}`}>
-                                    <a href="/" className={`hover:text-[#015A58] py-1 ${activeLink === 'design' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('design')}>Design Use Cases</a>
+                                    <a href="/case-study" className={`hover:text-[#015A58] py-1 ${activeLink === 'design' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('design')}>Design Use Cases</a>
                                 </li>
                                 <li className={` ${isAboutPage ? 'navlinks hoverable' : ''}`}>
                                     <a href="/" className={`hover:text-[#015A58] py-1 ${activeLink === 'ui' ? 'border-b-[#015A58] border-b-[1.5px]' : ''}`} onClick={() => setActiveLink('ui')}>UI PlayGround</a>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <div className=" nav-background fixed top-0 left-0 w-full h-full z-20 bg-[#015A58] flex items-center justify-center text-white">
                     <ul className="space-y-4 text-center text-[25px] ">
                         <li>
-                            <a href="/" className="hover:text-[#015A58]" onClick={() => { setActiveLink('design'); setIsOpen(false); }}>Design Use Cases</a>
+                            <a href="/case-study" className="hover:text-[#015A58]" onClick={() => { setActiveLink('design'); setIsOpen(false); }}>Design Use Cases</a>
                         </li>
                         <li>
                             <a href="/" className="hover:text-[#015A58]" onClick={() => { setActiveLink('ui'); setIsOpen(false); }}>UI Playground</a>

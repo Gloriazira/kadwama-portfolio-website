@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
-import afcHome from '../assets/case_study_one/first_screen.jpg';
-import designProcess from '../assets/case_study_one/design_process.png';
-import personaOne from '../assets/case_study_one/Persona_one.png';
-import personaTwo from '../assets/case_study_one/Persona_two.png';
-import userFlow from '../assets/case_study_one/afc_user_flow.png';
-import CompetitiveAnalysis from '../assets/case_study_one/Competitive analysis.png';
-import afcOnboarding from '../assets/case_study_one/afc_onboarding.png';
-import afcMain from '../assets/case_study_one/afcmain.png';
+import Navbar from '../../components/Navbar';
+import afcHome from '../../assets/case_study_one/first_screen.jpg';
+import designProcess from '../../assets/case_study_one/design_process.png';
+import personaOne from '../../assets/case_study_one/Persona_one.png';
+import personaTwo from '../../assets/case_study_one/Persona_two.png';
+import userFlow from '../../assets/case_study_one/afc_user_flow.png';
+import CompetitiveAnalysis from '../../assets/case_study_one/Competitive analysis.png';
+import afcOnboarding from '../../assets/case_study_one/afc_onboarding.png';
+import afcMain from '../../assets/case_study_one/afcmain.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,11 +16,11 @@ const importAll = (r) => {
 };
 
 // Dynamically import all images from the folder
-const afcUserImages = importAll(require.context('../assets/case_study_one/user', false, /\.(png|jpe?g|svg)$/));
-const afcAdminImages = importAll(require.context('../assets/case_study_one/admin', false, /\.(png|jpe?g|svg)$/));
+const afcUserImages = importAll(require.context('../../assets/case_study_one/user', false, /\.(png|jpe?g|svg)$/));
+const afcAdminImages = importAll(require.context('../../assets/case_study_one/admin', false, /\.(png|jpe?g|svg)$/));
 
 
-export default function CaseStudyDetail() {
+export default function HerPride() {
     const [activeSection, setActiveSection] = useState('');
     const navigate = useNavigate();
     const [showSnackbar, setShowSnackbar] = useState(false);
@@ -57,13 +57,11 @@ export default function CaseStudyDetail() {
         return () => observers.forEach((observer) => observer && observer.disconnect());
     }, []);
 
-    const handleClick = (caseId) => {
-        if (caseId === 'afc') {
-            navigate(`/case-study/${caseId}`);
-        } else {
-            setShowSnackbar(true);
-            setTimeout(() => setShowSnackbar(false), 3000);
-        }
+    const handleClick = () => {      
+            // setShowSnackbar(true);
+            // setTimeout(() => setShowSnackbar(false), 3000);
+
+            navigate(`/case-study/her-pride`)    
     };
 
     return (
