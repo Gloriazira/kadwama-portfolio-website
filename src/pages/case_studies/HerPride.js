@@ -37,46 +37,49 @@ export default function HerPride() {
                 <div className="py-20">
                     <img src={herpride} alt="Overview" className='mt-14' />
 
-                    <div className="case-study-content px-6 lg:mx-8 xl:mx-8 2xl:mx-8">
+                    <div className="case-study-content px-6 lg:px-0 xl:px-0 2xl:px-0 lg:mx-8 xl:mx-8 2xl:mx-8">
 
                         <section className="">
                             <div className="mt-10">
                                 <p className='text-wrap lg:text-nowrap xl:text-nowrap 2xl:text-nowrap font-bold text-[#000000] text-center lg:text-left xl:text-left 2xl:text-left text-[25px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px]'>Project Overview</p>
-                                <div className="grid grid-cols-2 md:flex md:justify-between lg:flex xl:flex 2xl:flex mt-6">
-                                    <div className="">
-                                        <p className="my-role font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">My role</p>
-                                        <ul className='mt-2 text-[13px] text-nowrap'>
-                                            <li>User Research</li>
-                                            <li>User Interviews</li>
-                                            <li>Sketching</li>
-                                            <li>Wireframing</li>
-                                            <li>Prototyping</li>
-                                            <li>Visual Design</li>
-                                            <li>Interaction Design</li>
-                                        </ul>
+                                {/* <div className="grid grid-cols-2 md:flex md:justify-between lg:flex xl:flex 2xl:flex mt-6"> */}
+                                  
+                                    <div className="flex flex-wrap gap-4 lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap mt-6">
+                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                            <p className="my-role font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">My role</p>
+                                            <ul className='mt-2 text-[13px] whitespace-normal'>
+                                                <li>User Research</li>
+                                                <li>User Interviews</li>
+                                                <li>Sketching</li>
+                                                <li>Wireframing</li>
+                                                <li>Prototyping</li>
+                                                <li>Visual Design</li>
+                                                <li>Interaction Design</li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                            <p className="collaboration font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Collaboration</p>
+                                            <ul className='mt-2 text-[13px] whitespace-normal'>
+                                                <li className='font-normal'>Anjola Odunaike (Product Manager)</li>
+                                                <li>User Personas</li>
+                                                <li>User Journey Map</li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                            <p className="project-info font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Project</p>
+                                            <ul className='mt-2 text-[13px] whitespace-normal'>
+                                                <li>Title - Her Pride Mobile App</li>
+                                                <li>Year - 2024</li>
+                                                <li>Duration - 5 Weeks</li>
+                                                <li>Type - Contract</li>
+                                            </ul>
+                                        </div>
                                     </div>
 
-                                    <div className="md:flex-1 lg:mx-10 xl:mx-10 2xl:mx-10">
-                                        <p className="collaboration font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Collaboration</p>
-                                        <ul className='mt-2 text-[13px] text-nowrap'>
-                                            <li className='font-normal'>Anjola Odunaike (Product Manager)</li>
-                                            <li>User Personas</li>
-                                            <li>User Journey Map</li>
-                                        </ul>
-                                    </div>
 
-                                    <div className="md:flex-1 mt-5 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 lg:mx-10 xl:mx-10 2xl:mx-10">
-                                        <p className="project-info font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Project</p>
-                                        <ul className='mt-2 text-[13px] text-nowrap'>
-                                            <li>Title - Her Pride Mobile App</li>
-                                            <li>Year - 2024</li>
-                                            <li>Duration - 5 Weeks</li>
-                                            <li>Type - Contract</li>
-                                        </ul>
-                                    </div>
-
-
-                                </div>
+                                {/* </div> */}
                             </div>
                         </section>
 
