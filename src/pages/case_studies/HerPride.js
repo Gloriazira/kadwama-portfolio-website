@@ -10,8 +10,8 @@ import userJourney from '../../assets/her_pride/HerPride_User_Journey_Map.png';
 import userFlow from '../../assets/her_pride/user-flow.png';
 
 import herprideStyleGuide from '../../assets/her_pride/style-guide.png';
-// import herprideStyleOne from '../../assets/her_pride/style-guide1.png';
-// import herprideStyleTwo from '../../assets/her_pride/style-guide2.png';
+import supportingScreen from '../../assets/her_pride/supporting_screens.png';
+import navigationScreens from '../../assets/her_pride/navigation_screens.png';
 import herprideSignupOne from '../../assets/her_pride/signup-screen1.png';
 import herprideSignupTwo from '../../assets/her_pride/signup-screen2.png';
 import herprideOnboardingOne from '../../assets/her_pride/onboarding-screens1.png';
@@ -43,40 +43,40 @@ export default function HerPride() {
                             <div className="mt-10">
                                 <p className='text-wrap lg:text-nowrap xl:text-nowrap 2xl:text-nowrap font-bold text-[#000000] text-center lg:text-left xl:text-left 2xl:text-left text-[25px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px]'>Project Overview</p>
                                 {/* <div className="grid grid-cols-2 md:flex md:justify-between lg:flex xl:flex 2xl:flex mt-6"> */}
-                                  
-                                    <div className="flex flex-wrap gap-4 lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap mt-6">
-                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
-                                            <p className="my-role font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">My role</p>
-                                            <ul className='mt-2 text-[13px] whitespace-normal'>
-                                                <li>User Research</li>
-                                                <li>User Interviews</li>
-                                                <li>Sketching</li>
-                                                <li>Wireframing</li>
-                                                <li>Prototyping</li>
-                                                <li>Visual Design</li>
-                                                <li>Interaction Design</li>
-                                            </ul>
-                                        </div>
 
-                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
-                                            <p className="collaboration font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Collaboration</p>
-                                            <ul className='mt-2 text-[13px] whitespace-normal'>
-                                                <li className='font-normal'>Anjola Odunaike (Product Manager)</li>
-                                                <li>User Personas</li>
-                                                <li>User Journey Map</li>
-                                            </ul>
-                                        </div>
-
-                                        <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
-                                            <p className="project-info font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Project</p>
-                                            <ul className='mt-2 text-[13px] whitespace-normal'>
-                                                <li>Title - Her Pride Mobile App</li>
-                                                <li>Year - 2024</li>
-                                                <li>Duration - 5 Weeks</li>
-                                                <li>Type - Contract</li>
-                                            </ul>
-                                        </div>
+                                <div className="flex flex-wrap gap-4 lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap mt-6">
+                                    <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                        <p className="my-role font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">My role</p>
+                                        <ul className='mt-2 text-[13px] whitespace-normal'>
+                                            <li>User Research</li>
+                                            <li>User Interviews</li>
+                                            <li>Sketching</li>
+                                            <li>Wireframing</li>
+                                            <li>Prototyping</li>
+                                            <li>Visual Design</li>
+                                            <li>Interaction Design</li>
+                                        </ul>
                                     </div>
+
+                                    <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                        <p className="collaboration font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Collaboration</p>
+                                        <ul className='mt-2 text-[13px] whitespace-normal'>
+                                            <li className='font-normal'>Anjola Odunaike (Product Manager)</li>
+                                            <li>User Personas</li>
+                                            <li>User Journey Map</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="basis-[calc(50%-1rem)] md:basis-[calc(30%-1rem)] flex-1 min-w-0">
+                                        <p className="project-info font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Project</p>
+                                        <ul className='mt-2 text-[13px] whitespace-normal'>
+                                            <li>Title - Her Pride Mobile App</li>
+                                            <li>Year - 2024</li>
+                                            <li>Duration - 5 Weeks</li>
+                                            <li>Type - Contract</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
 
                                 {/* </div> */}
@@ -177,6 +177,40 @@ export default function HerPride() {
                                 <div className="mt-8 flex flex-col items-center">
                                     <img src={herprideOnboardingOne} alt="Onboarding screens one" className='w-full lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%]' />
                                     <img src={herprideOnboardingTwo} alt="Onboarding screens two" className='w-full lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%] mt-5' />
+                                </div>
+                            </div>
+
+                            <div className="mt-8 lg:mt-24 xl:mt-24 2xl:mt-24">
+                                <p className="user-signup font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Main Navigation Screens</p>
+                                <p className='text-justify  lg:text-justify xl:text-justify 2xl:text-justify font-normal leading-6 text-[14px]'>
+                                    The high-fidelity main navigation screens provide users with quick and easy access to the app’s core features. The Home screen offers a concise summary of essential information, including cycle updates and mood insights. The Cycle screen provides detailed predictions and reports, empowering users with knowledge about their menstrual health. The Shop screen features a curated selection of trusted healthcare products tailored to Nigerian women. Lastly, the Track PMS screen enables users to log symptoms and receive relevant tips for managing premenstrual challenges. These screens are designed to ensure a seamless, intuitive, and culturally relevant experience.
+                                </p>
+                                <div className="mt-8 flex flex-col items-center">
+                                    <img src={navigationScreens} alt="Onboarding screens one" className='w-full lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%]' />
+                                </div>
+                            </div>
+
+                            <div className="mt-8 lg:mt-24 xl:mt-24 2xl:mt-24">
+                                <p className="user-signup font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Supporting Screens</p>
+                                <p className='text-justify  lg:text-justify xl:text-justify 2xl:text-justify font-normal leading-6 text-[14px]'>
+                                    The high-fidelity supporting screens complement the main navigation by enhancing user interactions and completing key workflows. These include detailed product pages for the Shop, personalized cycle insights and history on the Cycle screen, symptom logging and recommendations for Track PMS, and settings for customizing preferences. Each screen is designed with simplicity and relevance in mind, ensuring a cohesive experience that guides users seamlessly through the app’s features while maintaining accessibility and cultural alignment.
+                                </p>
+                                <div className="mt-8 flex flex-col items-center">
+                                    <img src={supportingScreen} alt="Onboarding screens one" className='w-full lg:max-w-[90%] xl:max-w-[90%] 2xl:max-w-[90%]' />
+                                </div>
+                            </div>
+
+                            <div className="mt-8 lg:mt-24 xl:mt-24 2xl:mt-24">
+                                <p className="user-signup font-semibold text-[20px] lg:text-[22px] xl:text-[22px] 2xl:text-[22px]">Lessons Learned</p>
+
+                                <div>
+                                    <ul className='text-[14px] list-inside list-disc '>
+                                        <li className="mt-1">                                        Cultural relevance and localization are essential for user engagement.</li>
+                                        <li className="mt-1">User research and feedback drive effective, tailored solutions.</li>
+                                        <li className="mt-1">Balancing robust features with simplicity ensures accessibility.</li>
+                                        <li className="mt-1">Iterative design improves usability and fosters collaboration.</li>
+                                        <li className="mt-1">Empathy and understanding of user pain points lead to impactful products.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </section>
